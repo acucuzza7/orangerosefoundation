@@ -9,13 +9,16 @@
 body {
  background: #fafafa;
  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 11pt;
+ font-size: 11pt;
+ width: 100vw;
+ height: 100vh;
 }
 
 .main-nav {
  background: #fff;
  border-bottom: 2px solid #F4770E;
- box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+ margin-bottom: 10px;
  position: sticky;
  top: 0;
  z-index: 100;
@@ -28,6 +31,7 @@ body {
  max-width: 1100px;
  margin: 0 auto;
  padding: 0.75rem 1rem;
+ position: relative;
 }
 
 /* --- Logo --- */
@@ -104,19 +108,22 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  margin-bottom: 10px;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-bottom: 10px;
 }
 
 .grid-item {
- background-color: lightblue;
- border: 1px solid steelblue;
- border-radius: 5px;
- padding: 15px;
+  background-color: #5304b5;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px;
 }
 
 .grid-item h2 {
@@ -128,26 +135,35 @@ main {
   min-height: 250px;
 }
 
-.column_right {
+.column_left, .column_right {
   text-align: center;
 }
 
 footer {
   background: #F4770E;
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+#donate {
+  border: 1px solid #ff0000;
 }
 
 /* --- Mobile Styles --- */
 @media (max-width: 768px) {
  #hamburger {
-  width: 25px;
+  width: 50px;
+ }
+
+ #nav-logo-img {
+  display: none;
  }
 
  .nav-list {
   display: none;
   background-color: #F4770E;
   position: absolute;
-  top: 110px;
+  top: 78px;
   left: 0;
   right: 0;
   flex-direction: column;
@@ -158,6 +174,10 @@ footer {
 
  .nav-list.show {
   display: flex;
+ }
+
+ .nav-link {
+  color: #fff;
  }
 
  .nav-toggle {
