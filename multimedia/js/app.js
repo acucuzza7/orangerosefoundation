@@ -15,7 +15,9 @@ navList.addEventListener('click', e => {
 
 // Flashcards
 const flashcards = [
-  { question: "What does HTML stand for?", answer: "HyperText Markup Language" }
+  { question: "What US State has the most domestic violence cases?", answer: "Oklahoma has the highest lifetime rate of domestic violence victimization for both women (49.1\%) and men (40.7\%)." },
+  { question: "How many children are affected by domestic violence?", answer: "Anywhere between 3 and 10 million children are exposed to domestic violence in the United States every year." },
+  { question: "Do most domestic violence incidents get reported to the police?", answer: "No, the majority of domestic violence incidents go unreported to the police." }  
 ];
 
 const container = document.getElementById("flashcard-container");
